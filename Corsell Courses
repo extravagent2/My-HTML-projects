@@ -1,0 +1,169 @@
+<!--This is the html code for the website corsell courses-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Corsell</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <input type="text" placeholder="Search courses">
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="banner">
+        <h1>Learn New Skills Online Anytime, Anywhere</h1>
+        <p>Explore our top-rated courses and expand your knowledge.</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses">
+        <h2>Popular Courses</h2>
+        <div class="course-list">
+            <div class="course">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/1*fHrAZJ1_L0Ff9dvVexL5_A.png" alt="Course 1" class="img">
+                <h3>Web Development</h3>
+                <p>Build and deploy modern websites.</p>
+            </div>
+            <div class="course">
+                <img src="https://www.mygreatlearning.com/blog/wp-content/uploads/2019/09/What-is-data-science-2.jpg" alt="Course 2" class="img">
+                <h3>Data Science</h3>
+                <p>Analyze data to gain insights.</p>
+            </div>
+            <div class="course">
+                <img src="https://topskilled.in/internship/wp-content/uploads/2024/02/Graphic-designing.jpg" alt="Course 3" class="img">
+                <h3>Graphic Design</h3>
+                <p>Create stunning visual content.</p>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Corsell, an online course platform where you can learn new skills at your own pace.</p>
+        <p>Our mission is to provide high-quality, affordable courses that are accessible to everyone, everywhere.</p>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea> <br>
+            <br>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </section>
+    <br>
+    <br>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Corsell. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+    </footer>
+
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+header input[type="text"] {
+    padding: 0.5em;
+    font-size: 1em;
+}
+
+section {
+    padding: 4em 1em;
+}
+
+.banner {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 6em 1em;
+}
+
+.course-list {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+}
+
+.course {
+    text-align: center;
+    width: 30%;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em;
+}
+
+footer a {
+    color: #fff;
+    margin: 0 0.5em;
+    text-decoration: none;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+.img {
+    height: 200px;
+    width: 150px;
+}
+
+.btn {
+    background-color: lightblue;
+}
