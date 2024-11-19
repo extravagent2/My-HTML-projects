@@ -1,0 +1,240 @@
+<!--this is a application for songs-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Musicx</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#playlist">Playlist</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="banner">
+        <h1>Welcome to Musicx</h1>
+        <p>Listen to your favorite tunes anytime, anywhere.</p>
+    </section>
+
+    <!-- Playlist Section -->
+    <section id="playlist" class="playlist">
+        <h2>My Playlist</h2>
+        <div class="song-list">
+            <div class="song">
+                <img src="data:image/jpeg;base64,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" alt="Song 1 Cover">
+                <div class="song-info">
+                    <h3>sweet but psycho</h3>
+                    <p>ava max</p>
+                    <audio controls>
+                        <source src="song1.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="song">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBktZ-89teX1lZesSfJp6Qeb2w01KTfY0q4w&s" alt="Song 2 Cover">
+                <div class="song-info">
+                    <h3>espresso</h3>
+                    <p>sabirina carpenter</p>
+                    <audio controls>
+                        <source src="song2.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="song">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEcWLTkGhCJig6TqyJZvJZiJRGdYF6bh8Cug&s" alt="Song 3 Cover">
+                <div class="song-info">
+                    <h3>Love me like you do</h3>
+                    <p>ellie goulding</p>
+                    <audio controls>
+                        <source src="song3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="song">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQB0_OD3e_E_6_WpJ5vZr0kV0yIPXLVeLNoxA&s" alt="Song 4 Cover">
+                <div class="song-info">
+                    <h3>Queen of Kings</h3>
+                    <p>Ava Max</p>
+                    <audio controls>
+                        <source src="song4.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <div class="song">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMKAdxwh1VDjujCqjCizdXWS0xzGxHiTxgOw&s" alt="Song 5 Cover">
+                <div class="song-info">
+                    <h3>Believer</h3>
+                    <p>imagine dragons</p>
+                    <audio controls>
+                        <source src="song5.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea> <br>
+            <br>
+            <button class="btn" type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Musicify. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<!--this is the css for the above html code-->
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+}
+
+.banner {
+    text-align: center;
+    padding: 4em 2em;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-top: 3.5em;
+}
+
+.playlist {
+    padding: 2em 1em;
+}
+
+.playlist h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.song-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.song {
+    background-color: #fff;
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+}
+
+.song img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.song-info {
+    margin-top: 0.5em;
+}
+
+.song-info h3 {
+    font-size: 1.2em;
+    margin: 0.2em 0;
+}
+
+.song-info p {
+    color: #666;
+}
+
+audio {
+    width: 100%;
+    margin-top: 0.5em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: #fff;
+    margin-top: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .song-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        display: block;
+        margin: 0.5em 0;
+    }
+}
+
+section {
+    padding: 4em 1em;
+}
+
+.btn {
+    background-color: lightblue;
+}
